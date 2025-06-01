@@ -92,8 +92,10 @@ void stencil_openmp(Pixel **current, Pixel **next, int n, int iter, int num_thre
 
                 int r = current[i][j].r + current[i-1][j].r + current[i+1][j].r +
                         current[i][j-1].r + current[i][j+1].r;
+        
                 int g = current[i][j].g + current[i-1][j].g + current[i+1][j].g +
                         current[i][j-1].g + current[i][j+1].g;
+                
                 int b = current[i][j].b + current[i-1][j].b + current[i+1][j].b +
                         current[i][j-1].b + current[i][j+1].b;
 
@@ -111,7 +113,8 @@ void stencil_openmp(Pixel **current, Pixel **next, int n, int iter, int num_thre
     }
 
     double end = omp_get_wtime();
-    printf("Tempo com %d threads: %.6f segundos\n", num_threads, end - start);
+    //printf("Tempo com %d threads: %.6f segundos\n", num_threads, end - start);
+    printf("Tempo: %.5f segundos\n", end - start);
 }
 
 int main(int argc, char *argv[]) {
