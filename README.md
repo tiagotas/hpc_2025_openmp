@@ -1,3 +1,24 @@
+CPU
+
+	Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+
+	Velocidade base:	2,70 GHz
+	Sockets:	1
+	Núcleos:	2
+	Processadores lógicos:	4
+	Virtualização:	Habilitado
+	Cache L1:	128 KB
+	Cache L2:	512 KB
+	Cache L3:	3,0 MB
+
+	Utilização	24%
+	Velocidade	2,87 GHz
+	Tempo de atividade	0:08:55:40
+	Processos	268
+	Threads	3310
+	Identificadores	97336
+
+
 | Tamanho da Matriz | Sequencial (s) | Paralelo 2T | Paralelo 4T | Paralelo 8T | Paralelo 16T |
 |-------------------|----------------|-------------|-------------|-------------|---------------|
 | 256x256 | 1.753004 | 1.09024 | 1.11335 | 1.29549 | 1.69270 |
